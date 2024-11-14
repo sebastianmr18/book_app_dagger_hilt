@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">book_app_dagger_hilt</string>
+    <string name="titleFragmentHomeInventory">Libros</string>
+    <string name="bookName">Libro: </string>
+    <string name="bookPrice">Precio: </string>
+    <string name="bookGenre">Genero: </string>
+    <string name="bookAuthor">Autor(a): </string>
+    <string name="addBookTitle">Añadir Libro</string>
+    <string name="editBookTitle">Editar Libro</string>
+    <string name="saveBook">Guardar libro</string>
+    <string name="detailBook">Detalles del Libro</string>
+</resources>

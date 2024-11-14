@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.AddBookFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewAddItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addBookTitle"
+            android:textSize="25sp"
+            android:textColor="@color/primaryText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/primaryText"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddItem"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:hint="@string/bookName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBookName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_view"
+                android:textColor="@color/primaryText"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/primaryText"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:hint="@string/bookPrice">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBookPrice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_view"
+                android:textColor="@color/primaryText"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutGenre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/primaryText"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:hint="@string/bookGenre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBookGenre"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_view"
+                android:textColor="@color/primaryText"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/primaryText"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutGenre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            android:hint="@string/bookAuthor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_view"
+                android:textColor="@color/primaryText"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonSaveBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/buttonColor"
+            android:text="@string/saveBook"
+            android:enabled="false"
+            app:layout_constraintTop_toBottomOf="@+id/inputLayoutAuthor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

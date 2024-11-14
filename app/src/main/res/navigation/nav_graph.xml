@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeBookFragment">
+
+    <fragment
+        android:id="@+id/homeBookFragment"
+        android:name="com.example.bd_app.view.fragment.HomeBookFragment"
+        android:label="fragment_home_inventory"
+        tools:layout="@layout/fragment_home_book">
+        <action
+            android:id="@+id/action_homeBookFragment_to_addBookFragment"
+            app:destination="@id/addBookFragment">
+        </action>
+        <action
+            android:id="@+id/action_homeBookFragment_to_bookDetailsFragment"
+            app:destination="@id/bookDetailsFragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.example.bd_app.view.fragment.AddBookFragment"
+        android:label="fragment_add_book"
+        tools:layout="@layout/fragment_add_book" />
+
+    <fragment
+        android:id="@+id/bookDetailsFragment"
+        android:name="com.example.bd_app.view.fragment.BookDetailsFragment"
+        android:label="fragment_book_detail"
+        tools:layout="@layout/fragment_book_details">
+        <action
+            android:id="@+id/action_bookDetailsFragment_to_bookEditFRagment"
+            app:destination="@id/bookEditFragment"
+            >
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookEditFragment"
+        android:name="com.example.bd_app.view.fragment.BookEditFragment"
+        android:label="fragment_edit_book"
+        tools:layout="@layout/fragment_book_edit">
+        <action
+            android:id="@+id/action_bookEditFragment_to_homeBookFragment"
+            app:destination="@id/homeBookFragment"
+            app:popUpTo="@id/homeBookFragment"
+            app:popUpToInclusive="true"
+            />
+
+    </fragment>
+
+
+</navigation>

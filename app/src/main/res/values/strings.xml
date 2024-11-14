@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">bd_app</string>
+    <string name="titleFragmentHomeInventory">Books</string>
+    <string name="bookName">Book: </string>
+    <string name="bookPrice">Price: </string>
+    <string name="bookGenre">Genre: </string>
+    <string name="bookAuthor">Author: </string>
+    <string name="addBookTitle">Add Book</string>
+    <string name="editBookTitle">Edit Book</string>
+    <string name="saveBook">Save Book</string>
+    <string name="detailBook">Book\'s Details</string>
+</resources>
